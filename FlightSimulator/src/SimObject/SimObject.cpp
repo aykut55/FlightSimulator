@@ -13,6 +13,7 @@ CSimObject::CSimObject(CSimEngine* pEngine)
     , m_objectType(EObjectType::Unknown)
     , m_isActive(true)
     , m_creationTime(0.0)
+    , m_simState(ESimState::Idle)
 {
 }
 

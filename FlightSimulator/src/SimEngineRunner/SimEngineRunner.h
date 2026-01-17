@@ -4,6 +4,7 @@
 #include <vector>
 #include "src/SimEngine/SimEngine.h"
 #include "src/Definitions/ThreadParams.h"
+#include "AirPlatform.h"
 
 class CSimEngineRunner 
 {

@@ -670,6 +670,8 @@ int CSimEngineRunner::runThreadFunc(void)
 
                 case EState::ResetDone:
                 {
+                    AFS::CAirPlatform* pAirPlatform = new AFS::CAirPlatform(pSimEngine);
+                    pAirPlatform->Init();
                 }
                 break;
 

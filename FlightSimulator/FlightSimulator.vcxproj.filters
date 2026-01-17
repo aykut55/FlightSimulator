@@ -100,6 +100,9 @@
     <ClInclude Include="src\SimObject\SimObject.h">
       <Filter>src\SimObject</Filter>
     </ClInclude>
+    <ClInclude Include="src\Interfaces\ISimObject.h">
+      <Filter>src\Interfaces</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\Platform.h">
       <Filter>src\Platform</Filter>
     </ClInclude>
@@ -200,6 +203,9 @@
     </Filter>
     <Filter Include="src\SimObject">
       <UniqueIdentifier>{18c9e7e0-4388-4f80-93a5-a3186912adf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Interfaces">
+      <UniqueIdentifier>{45c9e7e0-4388-4f80-93a5-a3186912adf6}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\Platform">
       <UniqueIdentifier>{33325927-10c1-4e78-807d-2a72426b11ee}</UniqueIdentifier>

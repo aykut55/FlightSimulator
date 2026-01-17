@@ -201,6 +201,7 @@
     <ClInclude Include="src\SimEngine\SimEngine.h" />
     <ClInclude Include="src\SimEngineRunner\SimEngineRunner.h" />
     <ClInclude Include="src\SimObject\SimObject.h" />
+    <ClInclude Include="src\Interfaces\ISimObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
