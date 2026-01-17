@@ -78,6 +78,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -94,6 +95,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -107,7 +109,8 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)src\Entity;$(ProjectDir)src\Entity\PhysicalEntity;$(ProjectDir)src\Platform;$(ProjectDir)src\Platform\AirPlatform;$(ProjectDir)src\Platform\AirPlatform\Aircraft;$(ProjectDir)src\Platform\AirPlatform\Aircraft\MilitaryAircraft;$(ProjectDir)src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter;$(ProjectDir)src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter;$(ProjectDir)src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F16;$(ProjectDir)src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F22;$(ProjectDir)src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F35;$(ProjectDir)src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\RussianFighter;$(ProjectDir)src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft;$(ProjectDir)src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\Cessna;$(ProjectDir)src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\PassengerAircraft;$(ProjectDir)src\Platform\AirPlatform\Helicopter;$(ProjectDir)src\Platform\AirPlatform\Helicopter\AttackHelicopter;$(ProjectDir)src\Platform\AirPlatform\Helicopter\TransportHelicopter;$(ProjectDir)src\Platform\AirPlatform\UAV;$(ProjectDir)src\Platform\SeaPlatform;$(ProjectDir)src\Platform\SeaPlatform\Ship;$(ProjectDir)src\Platform\SeaPlatform\Ship\Carrier;$(ProjectDir)src\Platform\SeaPlatform\Ship\Destroyer;$(ProjectDir)src\Platform\SeaPlatform\Ship\Frigate;$(ProjectDir)src\Platform\SeaPlatform\Submarine;$(ProjectDir)src\Platform\SeaPlatform\Submarine\AttackSubmarine;$(ProjectDir)src\Platform\SeaPlatform\Submarine\BallisticSubmarine;$(ProjectDir)src\Platform\SeaPlatform\USV;$(ProjectDir)src\SimObject;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -124,6 +127,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -132,13 +136,71 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\Entity\Entity.cpp" />
+    <ClCompile Include="src\Entity\PhysicalEntity\PhysicalEntity.cpp" />
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\Aircraft.cpp" />
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\AmericanFighter.cpp" />
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F16\F16.cpp" />
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F22\F22.cpp" />
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F35\F35.cpp" />
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\Fighter.cpp" />
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\RussianFighter\RussianFighter.cpp" />
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\MilitaryAircraft.cpp" />
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\Cessna\Cessna.cpp" />
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\NonMilitaryAircraft.cpp" />
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\PassengerAircraft\PassengerAircraft.cpp" />
+    <ClCompile Include="src\Platform\AirPlatform\AirPlatform.cpp" />
+    <ClCompile Include="src\Platform\AirPlatform\Helicopter\AttackHelicopter\AttackHelicopter.cpp" />
+    <ClCompile Include="src\Platform\AirPlatform\Helicopter\Helicopter.cpp" />
+    <ClCompile Include="src\Platform\AirPlatform\Helicopter\TransportHelicopter\TransportHelicopter.cpp" />
+    <ClCompile Include="src\Platform\AirPlatform\UAV\UAV.cpp" />
+    <ClCompile Include="src\Platform\Platform.cpp" />
+    <ClCompile Include="src\Platform\SeaPlatform\SeaPlatform.cpp" />
+    <ClCompile Include="src\Platform\SeaPlatform\Ship\Carrier\Carrier.cpp" />
+    <ClCompile Include="src\Platform\SeaPlatform\Ship\Destroyer\Destroyer.cpp" />
+    <ClCompile Include="src\Platform\SeaPlatform\Ship\Frigate\Frigate.cpp" />
+    <ClCompile Include="src\Platform\SeaPlatform\Ship\Ship.cpp" />
+    <ClCompile Include="src\Platform\SeaPlatform\Submarine\AttackSubmarine\AttackSubmarine.cpp" />
+    <ClCompile Include="src\Platform\SeaPlatform\Submarine\BallisticSubmarine\BallisticSubmarine.cpp" />
+    <ClCompile Include="src\Platform\SeaPlatform\Submarine\Submarine.cpp" />
+    <ClCompile Include="src\Platform\SeaPlatform\USV\USV.cpp" />
     <ClCompile Include="src\SimEngine\SimEngine.cpp" />
     <ClCompile Include="src\SimEngineRunner\SimEngineRunner.cpp" />
+    <ClCompile Include="src\SimObject\SimObject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Definitions\ThreadParams.h" />
+    <ClInclude Include="src\Entity\Entity.h" />
+    <ClInclude Include="src\Entity\PhysicalEntity\PhysicalEntity.h" />
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\Aircraft.h" />
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\AmericanFighter.h" />
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F16\F16.h" />
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F22\F22.h" />
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F35\F35.h" />
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\Fighter.h" />
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\RussianFighter\RussianFighter.h" />
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\MilitaryAircraft.h" />
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\Cessna\Cessna.h" />
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\NonMilitaryAircraft.h" />
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\PassengerAircraft\PassengerAircraft.h" />
+    <ClInclude Include="src\Platform\AirPlatform\AirPlatform.h" />
+    <ClInclude Include="src\Platform\AirPlatform\Helicopter\AttackHelicopter\AttackHelicopter.h" />
+    <ClInclude Include="src\Platform\AirPlatform\Helicopter\Helicopter.h" />
+    <ClInclude Include="src\Platform\AirPlatform\Helicopter\TransportHelicopter\TransportHelicopter.h" />
+    <ClInclude Include="src\Platform\AirPlatform\UAV\UAV.h" />
+    <ClInclude Include="src\Platform\Platform.h" />
+    <ClInclude Include="src\Platform\SeaPlatform\SeaPlatform.h" />
+    <ClInclude Include="src\Platform\SeaPlatform\Ship\Carrier\Carrier.h" />
+    <ClInclude Include="src\Platform\SeaPlatform\Ship\Destroyer\Destroyer.h" />
+    <ClInclude Include="src\Platform\SeaPlatform\Ship\Frigate\Frigate.h" />
+    <ClInclude Include="src\Platform\SeaPlatform\Ship\Ship.h" />
+    <ClInclude Include="src\Platform\SeaPlatform\Submarine\AttackSubmarine\AttackSubmarine.h" />
+    <ClInclude Include="src\Platform\SeaPlatform\Submarine\BallisticSubmarine\BallisticSubmarine.h" />
+    <ClInclude Include="src\Platform\SeaPlatform\Submarine\Submarine.h" />
+    <ClInclude Include="src\Platform\SeaPlatform\USV\USV.h" />
     <ClInclude Include="src\SimEngine\SimEngine.h" />
     <ClInclude Include="src\SimEngineRunner\SimEngineRunner.h" />
+    <ClInclude Include="src\SimObject\SimObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

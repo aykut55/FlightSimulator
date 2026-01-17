@@ -2,24 +2,297 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\SimObject\SimObject.cpp">
+      <Filter>src\SimObject</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Platform.cpp">
+      <Filter>src\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\SeaPlatform\SeaPlatform.cpp">
+      <Filter>src\Platform\SeaPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\SeaPlatform\Ship\Ship.cpp">
+      <Filter>src\Platform\SeaPlatform\Ship</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\SeaPlatform\Ship\Carrier\Carrier.cpp">
+      <Filter>src\Platform\SeaPlatform\Ship\Carrier</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\SeaPlatform\Ship\Frigate\Frigate.cpp">
+      <Filter>src\Platform\SeaPlatform\Ship\Frigate</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\SeaPlatform\Ship\Destroyer\Destroyer.cpp">
+      <Filter>src\Platform\SeaPlatform\Ship\Destroyer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\SeaPlatform\Submarine\Submarine.cpp">
+      <Filter>src\Platform\SeaPlatform\Submarine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\SeaPlatform\Submarine\BallisticSubmarine\BallisticSubmarine.cpp">
+      <Filter>src\Platform\SeaPlatform\Submarine\BallisticSubmarine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\SeaPlatform\Submarine\AttackSubmarine\AttackSubmarine.cpp">
+      <Filter>src\Platform\SeaPlatform\Submarine\AttackSubmarine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\SeaPlatform\USV\USV.cpp">
+      <Filter>src\Platform\SeaPlatform\USV</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\AirPlatform\AirPlatform.cpp">
+      <Filter>src\Platform\AirPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\Aircraft.cpp">
+      <Filter>src\Platform\AirPlatform\Aircraft</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\NonMilitaryAircraft.cpp">
+      <Filter>src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\Cessna\Cessna.cpp">
+      <Filter>src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\Cessna</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\PassengerAircraft\PassengerAircraft.cpp">
+      <Filter>src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\PassengerAircraft</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\MilitaryAircraft.cpp">
+      <Filter>src\Platform\AirPlatform\Aircraft\MilitaryAircraft</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\Fighter.cpp">
+      <Filter>src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\AmericanFighter.cpp">
+      <Filter>src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F35\F35.cpp">
+      <Filter>src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F35</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F22\F22.cpp">
+      <Filter>src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F22</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F16\F16.cpp">
+      <Filter>src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F16</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\RussianFighter\RussianFighter.cpp">
+      <Filter>src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\RussianFighter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\AirPlatform\Helicopter\Helicopter.cpp">
+      <Filter>src\Platform\AirPlatform\Helicopter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\AirPlatform\Helicopter\AttackHelicopter\AttackHelicopter.cpp">
+      <Filter>src\Platform\AirPlatform\Helicopter\AttackHelicopter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\AirPlatform\Helicopter\TransportHelicopter\TransportHelicopter.cpp">
+      <Filter>src\Platform\AirPlatform\Helicopter\TransportHelicopter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\AirPlatform\UAV\UAV.cpp">
+      <Filter>src\Platform\AirPlatform\UAV</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entity\Entity.cpp">
+      <Filter>src\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entity\PhysicalEntity\PhysicalEntity.cpp">
+      <Filter>src\Entity\PhysicalEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SimEngineRunner\SimEngineRunner.cpp">
+      <Filter>src\SimEngineRunner</Filter>
+    </ClCompile>
     <ClCompile Include="src\SimEngine\SimEngine.cpp">
       <Filter>src\SimEngine</Filter>
     </ClCompile>
-    <ClCompile Include="src\SimEngineRunner\SimEngineRunner.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="src">
-      <UniqueIdentifier>{008daa74-d07b-49ed-b1d8-4f07ec699b87}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\SimEngine">
-      <UniqueIdentifier>{b1624971-38d3-4a43-869a-afee8f74f5be}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="src\SimObject\SimObject.h">
+      <Filter>src\SimObject</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Platform.h">
+      <Filter>src\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\SeaPlatform\SeaPlatform.h">
+      <Filter>src\Platform\SeaPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\SeaPlatform\Ship\Ship.h">
+      <Filter>src\Platform\SeaPlatform\Ship</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\SeaPlatform\Ship\Carrier\Carrier.h">
+      <Filter>src\Platform\SeaPlatform\Ship\Carrier</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\SeaPlatform\Ship\Frigate\Frigate.h">
+      <Filter>src\Platform\SeaPlatform\Ship\Frigate</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\SeaPlatform\Ship\Destroyer\Destroyer.h">
+      <Filter>src\Platform\SeaPlatform\Ship\Destroyer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\SeaPlatform\Submarine\Submarine.h">
+      <Filter>src\Platform\SeaPlatform\Submarine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\SeaPlatform\Submarine\BallisticSubmarine\BallisticSubmarine.h">
+      <Filter>src\Platform\SeaPlatform\Submarine\BallisticSubmarine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\SeaPlatform\Submarine\AttackSubmarine\AttackSubmarine.h">
+      <Filter>src\Platform\SeaPlatform\Submarine\AttackSubmarine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\SeaPlatform\USV\USV.h">
+      <Filter>src\Platform\SeaPlatform\USV</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\AirPlatform\AirPlatform.h">
+      <Filter>src\Platform\AirPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\Aircraft.h">
+      <Filter>src\Platform\AirPlatform\Aircraft</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\NonMilitaryAircraft.h">
+      <Filter>src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\Cessna\Cessna.h">
+      <Filter>src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\Cessna</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\PassengerAircraft\PassengerAircraft.h">
+      <Filter>src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\PassengerAircraft</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\MilitaryAircraft.h">
+      <Filter>src\Platform\AirPlatform\Aircraft\MilitaryAircraft</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\Fighter.h">
+      <Filter>src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\AmericanFighter.h">
+      <Filter>src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F35\F35.h">
+      <Filter>src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F35</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F22\F22.h">
+      <Filter>src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F22</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F16\F16.h">
+      <Filter>src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F16</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\RussianFighter\RussianFighter.h">
+      <Filter>src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\RussianFighter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\AirPlatform\Helicopter\Helicopter.h">
+      <Filter>src\Platform\AirPlatform\Helicopter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\AirPlatform\Helicopter\AttackHelicopter\AttackHelicopter.h">
+      <Filter>src\Platform\AirPlatform\Helicopter\AttackHelicopter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\AirPlatform\Helicopter\TransportHelicopter\TransportHelicopter.h">
+      <Filter>src\Platform\AirPlatform\Helicopter\TransportHelicopter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\AirPlatform\UAV\UAV.h">
+      <Filter>src\Platform\AirPlatform\UAV</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entity\Entity.h">
+      <Filter>src\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entity\PhysicalEntity\PhysicalEntity.h">
+      <Filter>src\Entity\PhysicalEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SimEngineRunner\SimEngineRunner.h">
+      <Filter>src\SimEngineRunner</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Definitions\ThreadParams.h">
+      <Filter>src\Definitions</Filter>
+    </ClInclude>
     <ClInclude Include="src\SimEngine\SimEngine.h">
       <Filter>src\SimEngine</Filter>
     </ClInclude>
-    <ClInclude Include="src\Definitions\ThreadParams.h" />
-    <ClInclude Include="src\SimEngineRunner\SimEngineRunner.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{f7081619-340b-430a-8bdc-6f2720560ef6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SimObject">
+      <UniqueIdentifier>{18c9e7e0-4388-4f80-93a5-a3186912adf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform">
+      <UniqueIdentifier>{33325927-10c1-4e78-807d-2a72426b11ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\SeaPlatform">
+      <UniqueIdentifier>{186437c0-8819-4f71-9e06-daff84ec3266}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\SeaPlatform\Ship">
+      <UniqueIdentifier>{49a23e53-3fda-4355-92b0-5c797737088e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\SeaPlatform\Ship\Carrier">
+      <UniqueIdentifier>{b0d8b6b3-dd50-4df5-bded-19e477361e77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\SeaPlatform\Ship\Frigate">
+      <UniqueIdentifier>{88e38019-fa54-4105-8865-a2ec34ced6f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\SeaPlatform\Ship\Destroyer">
+      <UniqueIdentifier>{78859ca2-db65-4efa-9e6e-b0914d41dd3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\SeaPlatform\Submarine">
+      <UniqueIdentifier>{aae4bdf8-cbeb-42e1-a840-b064d724e06d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\SeaPlatform\Submarine\BallisticSubmarine">
+      <UniqueIdentifier>{0f47ed40-0004-45ad-a56e-f3ae865cae43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\SeaPlatform\Submarine\AttackSubmarine">
+      <UniqueIdentifier>{fc82b4b6-a66a-46f1-a677-50148136367b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\SeaPlatform\USV">
+      <UniqueIdentifier>{b136686b-5fce-4e51-9120-bf710f143745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\AirPlatform">
+      <UniqueIdentifier>{4071a156-2848-4618-b47f-78f8cf4769e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\AirPlatform\Aircraft">
+      <UniqueIdentifier>{4c08c1f2-421b-4782-aa58-43341fde2e5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft">
+      <UniqueIdentifier>{7252c204-a770-42c4-ba6f-6db3865a2c30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\Cessna">
+      <UniqueIdentifier>{7c0f56e4-5042-4f42-acb1-36820596bd85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\AirPlatform\Aircraft\NonMilitaryAircraft\PassengerAircraft">
+      <UniqueIdentifier>{2ccf6252-a55b-4633-9534-5562e8432064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft">
+      <UniqueIdentifier>{e5d465ad-dc80-4ffd-9d6d-1ee72464c721}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter">
+      <UniqueIdentifier>{c4c59755-bd6b-4bd6-8070-d4125c50b256}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter">
+      <UniqueIdentifier>{100d8ee6-40da-45c0-96c3-45a219ca48b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F35">
+      <UniqueIdentifier>{7e51f90e-3003-4123-a86f-e5e75039be58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F22">
+      <UniqueIdentifier>{7deecc9d-7dfa-4d85-afd8-80988a145496}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\AmericanFighter\F16">
+      <UniqueIdentifier>{5394db5d-c4b5-409e-a097-a2d17fb7a9e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\AirPlatform\Aircraft\MilitaryAircraft\Fighter\RussianFighter">
+      <UniqueIdentifier>{379e8837-b94a-4c41-8bad-caf8064775b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\AirPlatform\Helicopter">
+      <UniqueIdentifier>{1db74387-7d9e-474e-868c-395948298f5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\AirPlatform\Helicopter\AttackHelicopter">
+      <UniqueIdentifier>{af0a0b9c-c649-469e-bca3-027b3f8f3d5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\AirPlatform\Helicopter\TransportHelicopter">
+      <UniqueIdentifier>{8100fc57-c5ca-415e-98e0-ed9f0549590a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\AirPlatform\UAV">
+      <UniqueIdentifier>{22a74b57-67ac-4c3e-8663-9b299a7eae60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Entity">
+      <UniqueIdentifier>{c9138d91-55d6-4adf-afc6-be3385ddf259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Entity\PhysicalEntity">
+      <UniqueIdentifier>{2fa71ea1-32df-4462-82b1-31007862ec27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SimEngineRunner">
+      <UniqueIdentifier>{f30399e5-97db-4eb3-8b3c-7a533e0d8609}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Definitions">
+      <UniqueIdentifier>{6302b881-217a-4d65-bdd3-1ed25563390d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SimEngine">
+      <UniqueIdentifier>{4077f658-7795-4968-bb14-ae1e29bbfb92}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
